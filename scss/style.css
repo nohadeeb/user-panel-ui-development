@@ -1,0 +1,96 @@
+.main-container{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  max-height: 700px;
+  overflow-y: scroll;
+
+}
+.mainblocks{
+      flex: 0 0 50%;
+      min-height:500px;
+      max-height: 700px;
+      display: grid;
+}
+div>.left{
+    border-right: #92d1ff 3px solid
+}
+div>.mainblocks div{
+    width: 30%;
+    height: 0.2rem;
+}
+.left{
+    justify-items: flex-end;
+        align-items: center;
+}
+.left div{
+    grid-template-columns: 100%;
+    direction: rtl;
+}
+.horizontal-line{
+    width: 20%;
+    height: .5rem;
+    background-color: #92d1ff;
+    position: relative;
+    top: .1rem;
+    
+}
+img{
+    width: .5rem;
+    position: relative;
+    height: .5rem;
+}
+h3,p,h5{
+    color: #92d1ff;
+}
+.right{
+    position: relative;
+    bottom: 3em;
+    align-items: center;
+}
+.userwrapper,.userwrapperRight{
+    width: 58% !important;
+    background-color: white;
+    line-height: .2;
+}
+.userwrapper{
+    margin-right:4em ;
+    position: relative;
+    top: 5.5em;
+    text-align: right;    border-radius: 5px;
+    border:.5px #dedcdc solid;
+    padding-right: .5em;
+
+}
+.userwrapperRight{
+    margin-left: 4em;
+    position: relative;
+    top:6em;
+    border-radius: 5px;
+border:.5px #dedcdc solid;
+padding-left: .5em;
+}
+.usersleft{
+    margin-top: 2em;
+}
+@media (min-height:701px){
+ .mainblocks{
+    overflow-y: scroll;
+
+ }
+
+}
+@media only screen and (min-height:500px) and (max-height:700px){
+    .userwrapper{
+        margin-bottom: 2em;
+    }
+    .userwrapperRight{
+        top:11em;
+        margin-bottom:6em ;
+    }
+    .main-container{
+        background-position-x: 44%  !important;
+        background-size: contain  !important;
+    }
+}
